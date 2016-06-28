@@ -6,7 +6,7 @@
  * Time: 14:25
  */
 include_once "PDOManager.class.php";
-
+echo "hello php";
 PDOManager::getInstance()->initData();
 //PDOManager::getInstance()->insertRow();
 $re = PDOManager::getInstance()->selectRow(1);
