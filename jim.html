@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>JIM'Html</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/icon">
+    <script src="script.library/jquery-3.0.0.min.js"></script>
+    <script src="script.class/utils.js"></script>
+    <script src="script/goo.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <script>
+        function sub() {
+//          $("#tee").val($("#up").val());
+            document.getElementById("tee").value =  document.getElementById("up").value;
+            return false;
+        }
+    </script>
 </head>
-<body>
 
+<br>
+    <h1 style="text-align: center">Jim Game</h1>
+    <!--/*form表单的使用-->
+    <h2> form 表单的使用</h2>
+    <form id="form" action="php.class/Upload.php" method="get">
+        <input type="radio" name="sex" value="moo"></br>
+        <input type="radio" name="sex" value="boo"></br>
+        <input type="checkbox" name="che"></br>
+        <input type="text" name="tee"></br>
+        <input type="submit" value="提交">
+    </form>
+    </br>
+    <form enctype="multipart/form-data" action="php.class/Upload_01.php" method="post">
+        <!---->
+        <input type='hidden' name='MAX_FILE_SIZE' value='2621114' />
+        <input id="up" type="file" name="filese">
+        </br>
+        <input type="reset">
+        <input type="submit">
+    </form>
 </body>
 </html>

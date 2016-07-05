@@ -69,4 +69,12 @@ class PDOManager
             return -1;
         }
     }
+    public function updateFiled(){
+        if($this->db){
+
+        }else{
+            echo "未初始化数据";
+            return -1;
+        }
+    }
 }
